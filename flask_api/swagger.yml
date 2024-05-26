@@ -45,12 +45,12 @@ paths:
         - People
       summary: "blah blah person to create"
       requestBody:
+          x-body-name: "person"
           description: "person to create"
           required: True
           content:
             application/json:
               schema:
-                x-body-name: "person"
                 $ref: "#/components/schemas/Person"
       responses:
         "201":
